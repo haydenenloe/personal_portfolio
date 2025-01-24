@@ -3,14 +3,18 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const skills = [
-    "JavaScript",
-    "TypeScript",
+    "Data Pipelines & ETL",
+    "AWS (EC2, S2, Lambda)",
+    "MongoDB",
+    "Airflow",
+    "dbt",
+    "Snowflake",
     "React",
-    "Next.js",
     "Node.js",
+    "Docker",
     "Python",
     "SQL",
-    "Git",
+    "ML models",
   ];
 
   return (
