@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const skills = [
-    "Data Pipelines & ETL",
-    "AWS (EC2, S2, Lambda)",
-    "MongoDB",
-    "Airflow",
-    "dbt",
-    "Snowflake",
-    "React",
-    "Node.js",
-    "Docker",
-    "Python",
-    "SQL",
-    "ML models",
+    "Python & SQL",
+    "AWS Cloud Architecture",
+    "dbt & Data Pipelines",
+    "Docker & FastAPI",
+    "React & Modern Frontend",
+    "Product Strategy",
+    "Stakeholder Communication",
+    "Agile Management",
+    "Cross-functional Leadership",
+    "Technical Problem-solving",
+    "Business Analytics",
+    "Client Integration",
   ];
 
   return (
@@ -28,17 +28,10 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg mb-8">
-              I’m Hayden Enloe, a master’s student in Information Systems at
-              BYU, with a strong focus on data engineering and full-stack
-              development. I love building scalable data pipelines, creating
-              efficient ETL processes, and deploying solutions that make complex
-              data accessible and actionable. On the development side, I enjoy
-              crafting intuitive, user-friendly web applications by combining my
-              back-end expertise with front-end design. Whether it’s managing
-              data workflows with tools like Spark and AWS or building
-              full-stack applications with React and Node.js, I’m passionate
-              about leveraging technology to solve problems and create impactful
-              solutions.{" "}
+              I'm a Technical Product Leader who architects and launches high-impact software and analytics products that drive measurable business results. I excel at guiding cross-functional teams, aligning complex business needs with scalable technical solutions, and delivering end-to-end products from conception to production.
+            </p>
+            <p className="text-lg mb-8">
+              My expertise spans building robust data infrastructure with AWS, Python, and dbt, deploying cloud-first architectures, and leading rapid product development in fast-paced environments. I thrive at transforming complex technical challenges into deployed solutions while maintaining strong client focus and stakeholder communication. Whether managing product strategy, driving integrations, or rapidly learning new technologies, I consistently deliver outcomes that combine technical excellence with business impact.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {skills.map((skill) => (
