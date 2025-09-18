@@ -3,7 +3,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  image: string;
+  github: string;
+  demo: string;
+  pitch?: string;
+}
+
+const projects: Project[] = [
   {
     title: "Enterprise Fraud Detection Platform",
     description: "Led cross-functional team to architect and deploy ML-powered fraud detection system using advanced classification algorithms. Reduced false positives by 45% and increased detection accuracy to 94%, processing 100K+ daily transactions. Delivered end-to-end solution from stakeholder requirements to production deployment.",
@@ -89,9 +99,9 @@ export default function Projects() {
                       Demo
                     </a>
                   )}
-                  {(project as any).pitch && (
+                  {project.pitch && (
                     <a
-                      href={(project as any).pitch}
+                      href={project.pitch}
                       className="text-blue-500 hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"

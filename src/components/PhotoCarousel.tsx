@@ -42,7 +42,7 @@ export default function PhotoCarousel() {
               fill
               className="rounded-lg object-cover shadow-lg border-4 border-white dark:border-gray-800"
               priority
-              onError={(e) => {
+              onError={() => {
                 console.error('Image failed to load:', photos[currentIndex]);
               }}
             />
